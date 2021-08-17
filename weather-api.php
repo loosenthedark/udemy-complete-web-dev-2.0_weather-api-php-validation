@@ -187,8 +187,6 @@
               $cleanCitySearch = str_replace('%20', ' ', $citySearch);
               $weatherSummary = "The weather in ".ucwords($cleanCitySearch)." is currently ".$weatherArray['weather'][0]['description']." with ".$windSpeedInKm."km/h winds and a temperature of ".$tempInC."°C.";
               $successAlert = "<p class='alert alert-success forecast' role='alert'>".$weatherSummary."</p>";
-            //   $tags = $dom->getElementsByTagName('title');
-            //   $alts = $tags->item(0)->nodeValue;
           }
       };
     ?>
@@ -201,7 +199,7 @@
         <div class='form-wrapper'>
         <form method='POST'>
           <div class="form-group">
-            <input autocomplete="off" type="text" class="form-control" name="city" id="city" placeholder='e.g. London, Paris' value='<?php echo $alts; ?>'>
+            <input autocomplete="off" type="text" class="form-control" name="city" id="city" placeholder='e.g. London, Paris'>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
