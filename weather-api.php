@@ -185,7 +185,7 @@
               $tempInC = round($weatherArray['main']['temp'] - 273, 0);
               $windSpeedInKm = round($weatherArray['wind']['speed'] * 3.6, 0);
               $cleanCitySearch = str_replace('%20', ' ', $citySearch);
-              $weatherSummary = "The weather in ".ucwords($cleanCitySearch)." is currently ".$weatherArray['weather'][0]['description']." with ".$windSpeedInKm."km/h winds and a temperature of ".$tempInC."°C.";
+              $weatherSummary = "The weather in ".ucwords($cleanCitySearch)." is currently ".$weatherArray['weather'][0]['description']." with ".$windSpeedInKm." km/h winds and a temperature of ".$tempInC."°C.";
               $successAlert = "<p class='alert alert-success forecast' role='alert'>".$weatherSummary."</p>";
           }
       };
